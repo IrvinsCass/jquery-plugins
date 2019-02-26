@@ -1,5 +1,6 @@
-import './scss/index.scss'
+import './index.scss'
 import './index.pug'
-
-let add = (a, b) => a + b
-console.log(add(5, 5))
+import './blocks/standart-buttons/button_cyan-small-ripple/button_cyan-small-ripple'
+import './blocks/standart-buttons/button_cyan-big-ripple/button_cyan-big-ripple'
+import './blocks/standart-buttons/button_orange-small-ripple/button_orange-small-ripple'
+import './blocks/standart-buttons/button_orange-big-ripple/button_orange-big-ripple'

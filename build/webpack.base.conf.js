@@ -1,4 +1,5 @@
 const path = require('path')
+const webpack = require('webpack')
 const miniCssExtractPlugin = require('mini-css-extract-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
@@ -20,7 +21,7 @@ module.exports = {
   output: {
     filename: `${PATHS.assets}.js/[name].js`,
     path: PATHS.dist,
-    publicPath: './'
+    publicPath: '/'
   },
   module: {
     rules: [{
@@ -61,7 +62,7 @@ module.exports = {
           loader: 'file-loader',
           options: {
               name: '[name].[ext]',
-              outputPath: '/fonts/'
+              outputPath: `./fonts`
           }
       }]
     }]
@@ -77,6 +78,10 @@ module.exports = {
     }),
     new CopyWebpackPlugin([
       { from: `${PATHS.src}/img`, to: `${PATHS.assets}/img`},
+      { from: `${PATHS.src}/static`, to: ``}
+    ]),
+    new CopyWebpackPlugin([
+      { from: `${PATHS.src}/fonts`, to: `${PATHS.assets}/fonts`},
       { from: `${PATHS.src}/static`, to: ``}
     ]),
     new webpack.ProvidePlugin({

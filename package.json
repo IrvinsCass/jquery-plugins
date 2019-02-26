@@ -45,5 +45,8 @@
   "bugs": {
     "url": "https://github.com/IrvinsCass/CV/issues"
   },
-  "homepage": "https://github.com/IrvinsCass/CV#readme"
+  "homepage": "https://github.com/IrvinsCass/CV#readme",
+  "dependencies": {
+    "popper.js": "^1.14.7"
+  }
 }

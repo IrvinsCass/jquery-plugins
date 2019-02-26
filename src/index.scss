@@ -1,0 +1,19 @@
+@import "./utils/imports";
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  max-width: 594px;
+  @include flex(column);
+  margin: 0 auto;
+  font-family: $boldFont;
+  padding: 43px 53px 50px 43px;
+}
+
+.content-wrapper {
+  width: 100%;
+}
