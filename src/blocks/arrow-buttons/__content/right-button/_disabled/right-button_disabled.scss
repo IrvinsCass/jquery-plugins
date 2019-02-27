@@ -1,0 +1,18 @@
+.right-button_disabled {
+  @include flex(row);
+  @include size(44px);
+  justify-content: center;
+  margin: 0 12px;
+  border-radius: 50%;
+  border: 3px solid #e5e5e5;
+  background-color: #e5e5e5;
+
+  .right-button__arrow_disabled {
+    border: solid white;
+    border-width: 3px 0 0 3px;
+    display: inline-block;
+    padding: 6px;
+    transform: rotate(135deg);
+    margin-right: 5px;
+  }
+}

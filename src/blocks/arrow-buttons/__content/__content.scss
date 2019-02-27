@@ -1,0 +1,13 @@
+@import "./left-button/left-button";
+@import "./left-button/_hovered/left-button_hovered";
+@import "./left-button/_disabled/left-button_disabled";
+@import "./right-button/right-button";
+@import "./right-button/_hovered/right-button_hovered";
+@import "./right-button/_disabled/right-button_disabled";
+
+.arrow-buttons__content {
+  @include flex(row);
+  width: 100%;
+  justify-content: center;
+  padding: 40px 86px 50px 86px;
+}

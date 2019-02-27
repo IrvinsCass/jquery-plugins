@@ -19,7 +19,7 @@ module.exports = {
     index: PATHS.src
   },
   output: {
-    filename: `${PATHS.assets}.js/[name].js`,
+    filename: `${PATHS.assets}js/[name].js`,
     path: PATHS.dist,
     publicPath: '/'
   },
@@ -69,7 +69,7 @@ module.exports = {
   },
   plugins: [
     new miniCssExtractPlugin({
-      filename: `${PATHS.assets}.css/[name].css`
+      filename: `${PATHS.assets}css/[name].css`
     }),
     new HtmlWebpackPlugin({
       hash: false,
