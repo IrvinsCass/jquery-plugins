@@ -1,0 +1,7 @@
+.percentage__content {
+  @include flex(row);
+  width: 100%;
+  justify-content: space-between;
+  padding: 40px 0;
+  flex-wrap: wrap;
+}

@@ -1,5 +1,5 @@
-@import "./__header/__header";
-@import "./__content/__content";
+@import "./__header/arrow-buttons__header";
+@import "./__content/arrow-buttons__content";
 
 .arrow-buttons {
   @include flex(column);

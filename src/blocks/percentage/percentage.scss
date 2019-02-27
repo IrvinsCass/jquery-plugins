@@ -1,0 +1,8 @@
+@import "./__header/percentage__header";
+@import "./__content/percentage__content";
+
+.percentage {
+  @include flex(column);
+  justify-content: center;
+  width: 100%;
+}
