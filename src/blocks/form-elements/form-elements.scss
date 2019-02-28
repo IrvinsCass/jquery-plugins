@@ -1,0 +1,10 @@
+@import './__header/form-elements__header';
+@import './__content/form-elements__content';
+
+.form-elements {
+  @include flex(column);
+  justify-content: flex-start;
+  width: 45%;
+  min-width: 594px;
+  padding: 40px 0;
+}

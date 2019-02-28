@@ -1,0 +1,11 @@
+@import './text-forms__input/text-forms__input_error/text-forms__input_error';
+@import './text-forms__input/text-forms__input_success/text-forms__input_success';
+@import './text-forms__textarea/text-forms__textarea';
+@import './text-forms__submit/text-forms__submit';
+
+.text-forms {
+  width: 100%;
+  max-width: 285px;
+  @include flex(column, flex-start);
+  justify-content: center;
+}

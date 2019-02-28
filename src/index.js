@@ -8,3 +8,4 @@ import './blocks/standart-buttons/button_orange-big-ripple/button_orange-big-rip
 import './blocks/percentage/percentages'
 import './blocks/sliders/sliders'
 import './blocks/stages/stages'
+import './blocks/form-elements/form-elements'

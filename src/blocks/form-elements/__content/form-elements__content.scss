@@ -1,0 +1,10 @@
+@import './text-forms/text-forms';
+@import './toggles/toggles';
+
+.form-elements__content {
+  @include flex(row, flex-start);
+  width: 100%;
+  justify-content: space-between;
+  padding: 40px 0;
+  flex-wrap: wrap;
+}

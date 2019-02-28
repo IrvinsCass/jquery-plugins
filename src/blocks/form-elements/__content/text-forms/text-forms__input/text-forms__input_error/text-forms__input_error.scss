@@ -1,0 +1,41 @@
+.text-forms__input-wrapper {
+  @include size(100%);
+  @include flex(row);
+  justify-content: space-between;
+}
+
+.text-forms__input-error {
+  border: 1px solid #e5e5e5;
+  outline: none;
+  @include size(180px, 20px);
+  border-radius: 5px;
+  background-color: #e5e5e5;
+  margin: 6px 0;
+  padding: 4px 14px;
+  font-family: $mainFont;
+
+  &:focus {
+    border: 1px solid $warmColor;
+    border-radius: 5px;
+  }
+}
+
+.text-forms__input-error-message {
+  @include size(70px, 28px);
+  @include flex(row);
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 10px;
+  color: white;
+  background-color: $warmColor;
+  border-radius: 5px;
+  position: relative;
+}
+
+.text-forms__input-error-square {
+  position: absolute;
+  @include size(6px);
+  background-color: $warmColor;
+  left: -3px;
+  transform: rotate(45deg);
+}

@@ -29,6 +29,13 @@ module.exports = {
       loader: 'babel-loader',
       exclude: '/node_modules/'
     },{
+      test: require.resolve('jquery'),
+      use: [{
+      loader: 'expose-loader',
+      options: '$'
+        }
+      ]
+    },{
       test: /\.(png|jpg|svg|gif)$/,
       loader: 'file-loader',
       options: {
@@ -50,7 +57,7 @@ module.exports = {
           options: { sourceMap: true }
         }
       ]
-    }, {
+    },{
       test: /\.pug$/,
       use: [{
         loader: 'pug-loader',

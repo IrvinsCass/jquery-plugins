@@ -1,0 +1,9 @@
+@import './__header/toggles__header';
+@import './__content/toggles__content';
+
+.toggles {
+  width: 100%;
+  max-width: 285px;
+  @include flex(column, center);
+  justify-content: center;
+}
