@@ -4,5 +4,6 @@
 .percentage {
   @include flex(column);
   justify-content: center;
-  width: 100%;
+  width: 45%;
+  min-width: 594px;
 }

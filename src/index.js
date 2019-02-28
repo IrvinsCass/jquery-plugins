@@ -6,3 +6,5 @@ import './blocks/standart-buttons/button_orange-small-ripple/button_orange-small
 import './blocks/standart-buttons/button_orange-big-ripple/button_orange-big-ripple'
 
 import './blocks/percentage/percentages'
+import './blocks/sliders/sliders'
+import './blocks/stages/stages'

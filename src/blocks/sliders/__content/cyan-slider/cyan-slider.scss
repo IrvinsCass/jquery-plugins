@@ -1,0 +1,6 @@
+.cyan-slider {
+  width: 45%;
+  @include flex(row, center);
+  justify-content: center;
+}
+

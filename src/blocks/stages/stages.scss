@@ -1,0 +1,9 @@
+@import "./__header/stages__header";
+@import "./__content/stages__content";
+
+.stages {
+  @include flex(column);
+  justify-content: center;
+  width: 45%;
+  min-width: 594px;
+}

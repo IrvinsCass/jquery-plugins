@@ -1,0 +1,9 @@
+@import "./__header/sliders__header";
+@import "./__content/sliders__content";
+
+.sliders {
+  @include flex(column);
+  justify-content: center;
+  width: 45%;
+  min-width: 594px;
+}

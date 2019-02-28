@@ -1,0 +1,9 @@
+@import './orange-slider/orange-slider';
+@import './cyan-slider/cyan-slider';
+
+.sliders__content {
+  margin-top: 40px;
+  width: 100%;
+  @include flex(row);
+  justify-content: space-around;
+}

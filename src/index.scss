@@ -7,13 +7,19 @@
 }
 body {
   width: 100%;
-  max-width: 594px;
-  @include flex(column);
+  max-width: 1400px;
+  @include flex(row);
   margin: 0 auto;
   font-family: $boldFont;
-  padding: 43px 53px 50px 43px;
 }
 
 .content-wrapper {
   width: 100%;
+  @include flex(row, flex-start);
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 50px;
+  @media screen and (max-width: 1288px) {
+    justify-content: center;
+  }
 }
