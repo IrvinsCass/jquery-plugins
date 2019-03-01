@@ -7,4 +7,7 @@ $(document).ready(function() {
     selectedFontColor: '#fff',
     current: 3
   });
+
+  $('canvas:last').remove(); 
+
 });

@@ -1,5 +1,6 @@
 @import './text-forms/text-forms';
 @import './toggles/toggles';
+@import './checkboxes/checkboxes';
 
 .form-elements__content {
   @include flex(row, flex-start);
@@ -7,4 +8,8 @@
   justify-content: space-between;
   padding: 40px 0;
   flex-wrap: wrap;
+}
+
+.tick-radio-wrapper {
+  width: 45%;
 }

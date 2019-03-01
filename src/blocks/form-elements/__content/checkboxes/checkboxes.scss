@@ -1,0 +1,9 @@
+@import './__header/checkboxes__header';
+@import './__content/checkboxes__content';
+
+.checkboxes {
+  width: 100%;
+  max-width: 285px;
+  @include flex(column, center);
+  justify-content: center;
+}

@@ -112,4 +112,6 @@ import "./__content/stages__content";
     layer1.drawImage(canvas2, 0, 0);
 
   };
+  
+  $('canvas:nth-of-type(1)').remove();
 })(jQuery);
