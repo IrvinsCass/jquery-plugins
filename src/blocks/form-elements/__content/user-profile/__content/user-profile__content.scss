@@ -1,0 +1,9 @@
+@import './john-profile/john-profile';
+@import './sarah-profile/sarah-profile';
+
+.user-profile__content {
+  @include flex(column, center);
+  justify-content: center;
+  padding: 30px 0;
+  width: 100%;
+}

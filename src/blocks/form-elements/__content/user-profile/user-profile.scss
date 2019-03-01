@@ -1,0 +1,9 @@
+@import './__header/user-profile__header';
+@import './__content/user-profile__content';
+
+.user-profile {
+  width: 100%;
+  max-width: 285px;
+  @include flex(column, center);
+  justify-content: center;
+}

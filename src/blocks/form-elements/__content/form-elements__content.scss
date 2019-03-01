@@ -2,6 +2,7 @@
 @import './toggles/toggles';
 @import './checkboxes/checkboxes';
 @import './search-dropdown/search-dropdown';
+@import './user-profile/user-profile';
 
 .form-elements__content {
   @include flex(row, flex-start);
@@ -12,5 +13,6 @@
 }
 
 .tick-radio-wrapper {
-  width: 45%;
+  width: 48%;
+  max-width: 285px;
 }

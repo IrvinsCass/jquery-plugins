@@ -84,12 +84,12 @@ module.exports = {
       filename: './index.html'
     }),
     new CopyWebpackPlugin([
-      { from: `${PATHS.src}/img`, to: `${PATHS.assets}/img`},
-      { from: `${PATHS.src}/static`, to: ``}
+      { from: `${PATHS.src}/img`, to: `${PATHS.assets}img`},
+      { from: `${PATHS.src}/static`, to: ''}
     ]),
     new CopyWebpackPlugin([
-      { from: `${PATHS.src}/fonts`, to: `${PATHS.assets}/fonts`},
-      { from: `${PATHS.src}/static`, to: ``}
+      { from: `${PATHS.src}/fonts`, to: `${PATHS.assets}fonts`},
+      { from: `${PATHS.src}/static`, to: ''}
     ]),
     new webpack.ProvidePlugin({
       $: 'jquery',

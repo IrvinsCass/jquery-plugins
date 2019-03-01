@@ -1,0 +1,9 @@
+@import './__photoframe/john-profile__photoframe';
+@import './__info/john-profile__info';
+
+.john-profile {
+  @include flex(row);
+  justify-content: center;
+  width: 100%;
+  margin: 10px 0;
+}
