@@ -1,0 +1,150 @@
+<!DOCTYPE html><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JQuery plugins</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href="./static/css/index.css" rel="stylesheet"></head>
+  <body>
+    <div class="content-wrapper">
+<article class="standart-buttons">
+  <h2 class="standart-buttons__header">standart buttons</h2>
+  <div class="standart-buttons__content">
+<button class="button_cyan-small-ripple">button</button>
+<button class="button_cyan-big-ripple">button</button>
+<button class="button_orange-big-ripple">button</button>
+<button class="button_orange-small-ripple">button</button>
+<button class="button_cyan-small-hover">button</button>
+<button class="button_cyan-big-hover">button</button>
+<button class="button_orange-big-hover">button</button>
+<button class="button_orange-small-hover">button</button>
+<button class="button_cyan-small">button</button>
+<button class="button_cyan-big">button</button>
+<button class="button_orange-big">button</button>
+<button class="button_orange-small">button</button>
+  </div>
+</article>
+<article class="arrow-buttons">
+<h2 class="arrow-buttons__header">arrow buttons</h2>
+<div class="arrow-buttons__content"><a class="left-button" href="#">
+  <div class="left-button__arrow"></div></a><a class="right-button" href="#">
+  <div class="right-button__arrow"></div></a><a class="left-button_disabled" href="#">
+  <div class="left-button__arrow"></div></a><a class="right-button_disabled" href="#">
+  <div class="right-button__arrow"></div></a><a class="left-button_hovered" href="#">
+  <div class="left-button__arrow_hovered"></div></a><a class="right-button_hovered" href="#">
+  <div class="right-button__arrow_hovered"></div></a>
+</div>
+</article>
+<article class="percentage">
+<h2 class="percentage__header">percentages / pie chart</h2>
+<div class="percentage__content">
+<div class="percent-one"></div>
+<div class="percent-two"></div>
+<div class="percent-three"></div>
+<div class="percent-four"></div>
+<div class="pie-chart"></div>
+</div>
+</article>
+<article class="sliders">
+<h2 class="sliders__header">sliders</h2>
+<div class="sliders__content">
+<div class="orange-slider">
+  <input class="container" type="range">
+</div>
+<div class="cyan-slider">
+  <input type="range" id="html-input-range">
+</div>
+</div>
+</article>
+<article class="stages">
+<h2 class="stages__header">stages</h2>
+<div class="stages"></div>
+</article>
+<article class="form-elements">
+<h2 class="form-elements__header">form elements</h2>
+<div class="form-elements__content">
+<div class="text-forms">
+<div class="text-forms__input-wrapper">
+  <input class="text-forms__input-error" type="text" placeholder="Your Name" required minlength="1">
+  <div class="text-forms__input-error-message">error
+    <div class="text-forms__input-error-square"></div>
+  </div>
+</div>
+<div class="text-forms__input-wrapper">
+  <input class="text-forms__input-success" type="text" placeholder="Your Email" required minlength="1">
+  <div class="text-forms__input-success-message">thanks!
+    <div class="text-forms__input-success-square"></div>
+  </div>
+</div>
+<textarea class="text-form__textarea" placeholder="Your Message" rows="4"></textarea>
+<div class="button_submit-wrapper">
+  <button class="button_submit">submit</button>
+</div>
+</div>
+  <div class="tick-radio-wrapper">
+<article class="toggles">
+<h2 class="toggles__header">toggles</h2>
+<div class="toggles__content">
+  <input type="radio" name="radio-butt" value="dzen">
+  <input type="radio" name="radio-butt" value="nedzen" checked>
+</div>
+</article>
+<article class="checkboxes">
+<h2 class="checkboxes__header">tick boxes</h2>
+<div class="checkboxes__content">
+  <label class="container">
+    <input type="checkbox" checked><span class="checkmark"></span>
+  </label>
+  <label class="container">
+    <input type="checkbox"><span class="checkmark"></span>
+  </label>
+</div>
+</article>
+  </div>
+<article class="search-dropdown">
+<h2 class="search-dropdown__header">search / drop-down</h2>
+<div class="search-dropdown__content">
+<div class="search-field-wrapper">
+  <input class="search-field" type="text" placeholder="Search">
+  <button class="submit-button"> <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></button>
+</div>
+<div class="search-field_error-wrapper">
+  <input class="search-field_error" type="text" placeholder="I’ve not found what I’m looking for...">
+  <button class="submit-button_error"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></button>
+</div>
+<div class="dropdown-field-wrapper">
+  <select class="dropdown-field" name="destiny">
+    <option value="Choose An Option" selected>Choose An Option</option>
+    <option value="Or Dont">Or Dont</option>
+  </select>
+</div>
+</div>
+</article>
+<article class="user-profile">
+<h2 class="user-profile__header">user profile</h2>
+<div class="user-profile__content">
+<div class="john-profile">
+<div class="john-profile__photoframe"><img src="./assets/img/john.png" alt="johnny ohh yeaah"></div>
+<div class="john-profile__info">
+  <div class="john-profile__info-name">John Smith</div>
+  <div class="john-profile__info-profession">ux designer</div>
+  <div class="john-profile__info-social"><i class="fab fa-facebook-f" aria-hidden="true"></i><i class="fab fa-twitter" aria-hidden="true"></i><i class="fab fa-dribbble" aria-hidden="true"></i></div>
+</div>
+</div>
+<div class="sarah-profile">
+<div class="sarah-profile__photoframe"><img src="./assets/img/sarah.png" alt="from sarah with love"></div>
+<div class="sarah-profile__info">
+  <div class="sarah-profile__info-name">Sarah Brown</div>
+  <div class="sarah-profile__info-profession">developer</div>
+  <div class="sarah-profile__info-social"><i class="fab fa-facebook-f" aria-hidden="true"></i><i class="fab fa-twitter" aria-hidden="true"></i><i class="fab fa-dribbble" aria-hidden="true"></i></div>
+</div>
+</div>
+</div>
+</article>
+</div>
+</article>
+    </div>
+  <script type="text/javascript" src="./static/js/index.js"></script></body>
+</html>
