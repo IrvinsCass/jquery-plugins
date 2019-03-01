@@ -1,0 +1,9 @@
+@import './__photoframe/sarah-profile__photoframe';
+@import './__info/sarah-profile__info';
+
+.sarah-profile {
+  @include flex(row);
+  justify-content: center;
+  width: 100%;
+  margin: 10px 0;
+}

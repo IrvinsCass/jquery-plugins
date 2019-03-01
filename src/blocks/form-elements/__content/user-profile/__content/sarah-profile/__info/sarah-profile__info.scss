@@ -1,0 +1,40 @@
+.sarah-profile__info {
+  @include size(165px, 90px);
+  @include flex(column);
+  justify-content: center;
+  background-color: $coldColor;
+  margin-left: 10px;
+  border-radius: 5px;
+  position: relative;
+  font-family: $mainFont;
+  color: white;
+
+  &:before {
+    content: '';
+    position: absolute;
+    @include size(16px);
+    background-color: $coldColor;
+    transform: rotate(45deg);
+    left: -5px;
+    top: 37px;
+  }
+
+  &-name {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  &-profession {
+    text-transform: uppercase;
+    font-family: $boldFont;
+    font-size: 11px;
+    margin-bottom: 8px;
+  }
+
+  &-social {
+    @include flex(row);
+    justify-content: space-between;
+    font-size: 20px;
+    width: 40%;
+  }
+}

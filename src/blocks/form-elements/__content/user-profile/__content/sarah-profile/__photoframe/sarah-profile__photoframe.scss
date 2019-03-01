@@ -1,0 +1,13 @@
+.sarah-profile__photoframe {
+  @include size (90px);
+  border-radius: 50%;
+  border: 3px solid #e5e5e5;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    position: absolute;
+    left: -85px;
+    top: -35px;
+  }
+}
