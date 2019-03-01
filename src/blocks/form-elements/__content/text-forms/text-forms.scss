@@ -8,4 +8,5 @@
   max-width: 285px;
   @include flex(column, flex-start);
   justify-content: center;
+  margin-bottom: 30px;
 }

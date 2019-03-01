@@ -1,0 +1,41 @@
+.search-field_error-wrapper{
+  @include flex(row);
+  justify-content: flex-start;
+  width: 100%;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.search-field_error {
+  border: 1px solid $warmColor;
+  outline: none;
+  @include size(255px, 20px);
+  border-radius: 3px 0 0 3px;
+  background-color: $warmColor;
+  margin: 6px 0;
+  padding: 4px 34px 4px 14px;
+  font-family: $mainFont;
+
+  &:focus {
+    border: 1px solid $warmColor;
+    border-radius: 3px;
+  }
+
+  &::placeholder {
+    color: white;
+  }
+}
+
+.submit-button_error {
+  @include size(30px);
+  background-color: $warmColor;
+  border: 1px solid $warmColor;
+  outline: none;
+  border-radius: 0 3px 3px 0;
+  position: absolute;
+  right: 0px;
+}
+
+.fa-search {
+  color: white;
+}

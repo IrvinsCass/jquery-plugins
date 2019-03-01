@@ -1,0 +1,38 @@
+@import './search-field_error/search-field_error';
+
+.search-field-wrapper {
+  @include flex(row);
+  justify-content: flex-start;
+  width: 100%;
+  flex-wrap: wrap;
+  position: relative;
+}
+.search-field {
+  border: 1px solid #e5e5e5;
+  outline: none;
+  @include size(255px, 20px);
+  border-radius: 3px 0 0 3px;
+  background-color: #e5e5e5;
+  margin: 6px 0;
+  padding: 4px 34px 4px 14px;
+  font-family: $mainFont;
+
+  &:focus {
+    border: 1px solid $warmColor;
+    border-radius: 3px;
+  }
+}
+
+.submit-button {
+  @include size(30px);
+  background-color: $warmColor;
+  border: 1px solid $warmColor;
+  outline: none;
+  border-radius: 0 3px 3px 0;
+  position: absolute;
+  right: 0px;
+}
+
+.fa-search {
+  color: white;
+}

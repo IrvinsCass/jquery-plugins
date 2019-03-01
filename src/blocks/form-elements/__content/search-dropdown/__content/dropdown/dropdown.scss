@@ -1,0 +1,53 @@
+.dropdown-field-wrapper {
+  @include flex(row);
+  justify-content: flex-start;
+  width: 100%;
+  flex-wrap: wrap;
+  position: relative;
+
+  &:before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: $coldColor;
+    pointer-events: none;
+    position: absolute;
+    top: 6px;
+    right: 0;
+    z-index: 1;
+  }
+
+  &:after {
+    content: "";
+    @include size(7px);
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    z-index: 1;
+    margin-top: -6px;
+  }
+}
+
+.dropdown-field {
+  border: 1px solid #e5e5e5;
+  outline: none;
+  @include size(285px, 30px);
+  border-radius: 3px 0 0 3px;
+  background-color: #e5e5e5;
+  margin: 6px 0;
+  padding: 4px 10px;
+  font-family: $mainFont;
+  color: #888;
+  appearance: none;
+  position: relative;
+
+  &:focus {
+    border: 1px solid $coldColor;
+    border-radius: 3px;
+  }
+ }

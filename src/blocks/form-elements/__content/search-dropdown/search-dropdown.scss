@@ -1,0 +1,9 @@
+@import './__header/search-dropdown__header';
+@import './__content/search-dropdown__content';
+
+.search-dropdown {
+  width: 100%;
+  max-width: 285px;
+  @include flex(column, center);
+  justify-content: center;
+}

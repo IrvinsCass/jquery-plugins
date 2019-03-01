@@ -8,7 +8,7 @@
   border: 1px solid #e5e5e5;
   outline: none;
   @include size(180px, 20px);
-  border-radius: 5px;
+  border-radius: 3px;
   background-color: #e5e5e5;
   margin: 6px 0;
   padding: 4px 14px;
@@ -16,7 +16,7 @@
 
   &:focus {
     border: 1px solid $coldColor;
-    border-radius: 5px;
+    border-radius: 3px;
   }
 }
 

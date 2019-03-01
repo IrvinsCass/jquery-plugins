@@ -1,6 +1,7 @@
 @import './text-forms/text-forms';
 @import './toggles/toggles';
 @import './checkboxes/checkboxes';
+@import './search-dropdown/search-dropdown';
 
 .form-elements__content {
   @include flex(row, flex-start);

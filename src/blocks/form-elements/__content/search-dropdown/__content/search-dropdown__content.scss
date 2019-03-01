@@ -1,0 +1,10 @@
+@import './search-field/search-field';
+@import './dropdown/dropdown';
+
+.search-dropdown__content {
+  @include flex(row, flex-start);
+  width: 100%;
+  justify-content: flex-start;
+  padding: 20px 0;
+  flex-wrap: wrap;
+}
