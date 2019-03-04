@@ -1,0 +1,71 @@
+.events-block {
+  @include flex(column, flex-start);
+  justify-content: flex-start;
+  width: 48%;
+  max-width: 288px;
+  height: 210px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px;
+  background-color: $coldColor;
+}
+
+.events__image {
+  position: relative;
+  width: 95px;
+  overflow: hidden;
+  height: 210px;
+
+  img {
+    position: absolute;
+    left: -60px;
+    z-index: 1000;
+  }
+}
+
+.events__text {
+  position: absolute;
+  left: 95px;
+  padding: 10px 25px 25px 25px;
+  color: white;
+
+  &-header {
+    font-family: $thinFont;
+    font-size: 26px;
+    margin-bottom: 12px;
+  }
+
+  .date {
+    font-size: 66px;
+  }
+
+  &-title {
+    text-transform: uppercase;
+    font-family: $boldFont;
+    font-size: 11px;
+    margin-bottom: 12px;
+  }
+
+  &-content {
+    font-size: 11px;
+    font-family: $mainFont;
+    margin-bottom: 12px;
+  }
+
+  &-button {
+    @include size(128px, 22px);
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    color: $coldColor;
+    font-family: $boldFont;
+    font-size: 10px;
+    box-shadow: 0 3px #379285;
+
+    &:active {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+@import './news-block/news-block';
+@import './events-block/events-block';
+
+.news__content {
+  @include flex(row);
+  width: 100%;
+  margin-top: 30px;
+  justify-content: space-between;
+}

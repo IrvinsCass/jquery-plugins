@@ -1,0 +1,50 @@
+.news-block {
+  @include flex(column, flex-start);
+  justify-content: flex-start;
+  width: 48%;
+  max-width: 288px;
+  height: 210px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px;
+  background-color: $warmColor;
+}
+
+.news__image {
+  position: relative;
+  width: 95px;
+  overflow: hidden;
+  height: 210px;
+
+  img {
+    position: absolute;
+    left: -60px;
+    z-index: 1000;
+  }
+}
+
+.news__text {
+  position: absolute;
+  left: 95px;
+  padding: 25px;
+  background-color: $warmColor;
+  color: white;
+
+  &-header {
+    font-family: $thinFont;
+    font-size: 26px;
+    margin-bottom: 12px;
+  }
+
+  &-date {
+    text-transform: uppercase;
+    font-family: $boldFont;
+    font-size: 11px;
+    margin-bottom: 12px;
+  }
+
+  &-content {
+    font-size: 11px;
+    font-family: $mainFont;
+  }
+}

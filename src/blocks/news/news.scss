@@ -1,0 +1,9 @@
+@import './__header/news__header';
+@import './__content/news__content';
+
+.news {
+  width: 45%;
+  min-width: 594px;
+  @include flex(column, center);
+  justify-content: center;
+}
