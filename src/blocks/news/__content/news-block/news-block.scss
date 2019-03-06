@@ -1,18 +1,18 @@
 .news-block {
-  @include flex(column, flex-start);
+  @include flex(row);
   justify-content: flex-start;
-  width: 48%;
+  width: 100%;
   max-width: 288px;
   height: 210px;
-  position: relative;
   overflow: hidden;
   border-radius: 3px;
   background-color: $warmColor;
+  text-decoration: none;
 }
 
 .news__image {
   position: relative;
-  width: 95px;
+  min-width: 95px;
   overflow: hidden;
   height: 210px;
 
@@ -24,10 +24,7 @@
 }
 
 .news__text {
-  position: absolute;
-  left: 95px;
   padding: 25px;
-  background-color: $warmColor;
   color: white;
 
   &-header {
