@@ -1,8 +1,12 @@
+.events-tracker {
+  width: 100%;
+  max-width: 288px;
+}
+
 .events-block {
   @include flex(row);
   justify-content: flex-start;
   width: 100%;
-  max-width: 288px;
   height: 210px;
   overflow: hidden;
   border-radius: 3px;
@@ -33,7 +37,7 @@
   }
 
   .date {
-    font-size: 66px;
+    font-size: 64px;
   }
 
   &-title {

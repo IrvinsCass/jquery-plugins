@@ -1,0 +1,12 @@
+.button_orange_hovered {
+  border: 1px solid $warmColor;
+  box-shadow: 0 3px #ca583a;
+  color: $warmColor;
+
+  &:hover {
+    background-color: $warmColor;
+    color: white;
+    box-shadow: 0 3px #ca583a;
+    border: 1px solid $warmColor;
+  }
+}

@@ -6,4 +6,5 @@
   min-width: 594px;
   @include flex(column, center);
   justify-content: center;
+  margin-bottom: 40px;
 }

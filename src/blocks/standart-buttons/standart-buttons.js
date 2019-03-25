@@ -1,4 +1,26 @@
-import './button_cyan-big-ripple/button_cyan-big-ripple';
-import './button_cyan-small-ripple/button_cyan-small-ripple';
-import './button_orange-big-ripple/button_orange-big-ripple';
-import './button_orange-small-ripple/button_orange-small-ripple';
+
+var ripple = document.getElementsByClassName('button_pressed');
+
+Array.prototype.forEach.call(ripple, function (r) {
+  r.addEventListener('click', createRipple);
+})
+
+function createRipple (e) {
+
+  if(this.getElementsByClassName('ripple').length > 0)
+    {
+      this.removeChild(this.childNodes[1]);
+    }
+    
+  var circle = document.createElement('div');
+  this.appendChild(circle);
+
+  var d = 40;
+
+  circle.style.width = circle.style.height = d + 'px';
+
+  circle.style.left = e.pageX - screenLeft - this.offsetLeft - d / 2 + "px";
+  circle.style.top = e.pageY - screenTop - this.offsetTop - d / 2 + "px";
+
+  circle.classList.add('ripple')
+}

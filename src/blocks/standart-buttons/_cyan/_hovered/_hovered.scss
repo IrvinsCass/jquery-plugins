@@ -1,0 +1,12 @@
+.button_cyan_hovered {
+  border: 1px solid $coldColor;
+  box-shadow: 0 3px #28a290;
+  color: $coldColor;
+
+  &:hover {
+    background-color: $coldColor;
+    color: white;
+    box-shadow: 0 3px #28a290;
+    border: 1px solid $coldColor;
+  }
+}

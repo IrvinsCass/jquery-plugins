@@ -1,0 +1,9 @@
+@import './__header/video__header';
+@import './__content/video__content';
+
+.video {
+  width: 45%;
+  min-width: 594px;
+  @include flex(column, center);
+  justify-content: center;
+}

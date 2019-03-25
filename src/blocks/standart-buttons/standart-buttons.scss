@@ -1,15 +1,8 @@
-@import "./button_cyan-big/button_cyan-big";
-@import "./button_cyan-big-hover/button_cyan-big-hover";
-@import "./button_cyan-big-ripple/button_cyan-big-ripple";
-@import "./button_cyan-small/button_cyan-small";
-@import "./button_cyan-small-hover/button_cyan-small-hover";
-@import "./button_cyan-small-ripple/button_cyan-small-ripple";
-@import "./button_orange-big/button_orange-big";
-@import "./button_orange-big-hover/button_orange-big-hover";
-@import "./button_orange-big-ripple/button_orange-big-ripple";
-@import "./button_orange-small/button_orange-small";
-@import "./button_orange-small-hover/button_orange-small-hover";
-@import "./button_orange-small-ripple/button_orange-small-ripple";
+@import "./_big/big";
+@import "./_small/small";
+@import "./_cyan/cyan";
+@import "./_orange/orange";
+@import "./_pressed/pressed";
 
 .standart-buttons {
   @include flex(column);
@@ -25,9 +18,21 @@
 
   &__content {
     @include flex(row, flex-end);
+    width: 80%;
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 0 63px 29px 63px;
     margin-top: 60px;
   }
+}
+
+.button {
+  margin: 10px;
+  background-color: white;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-family: $boldFont;
+  outline: none;
+  position: relative;
+  overflow: hidden;
 }

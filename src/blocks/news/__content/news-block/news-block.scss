@@ -1,8 +1,12 @@
+.news-tracker {
+  width: 100%;
+  max-width: 288px;
+}
+
 .news-block {
   @include flex(row);
   justify-content: flex-start;
   width: 100%;
-  max-width: 288px;
   height: 210px;
   overflow: hidden;
   border-radius: 3px;
