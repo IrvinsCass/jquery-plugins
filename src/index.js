@@ -21,4 +21,21 @@ $(document).ready(function() {
     interval: 5000,
     visible: 1
   });
+
+  $('.cyan-slider__slider').jRange({
+    from: 0,
+    to: 100,
+    showLabels : false,
+    theme : 'theme-green',
+    scale: [0,25,50,75,100]
+    });
+  
+  $('.orange-slider__slider').jRange({
+    from: 0,
+    to: 100,
+    showLabels : true,
+    showScale : false,
+    theme : 'theme-orange',
+    });
+    
 })
