@@ -10,24 +10,24 @@
   <body>
     <div class="content-wrapper">
 <article class="standart-buttons">
-  <h2 class="standart-buttons__header">standart buttons</h2>
+  <h2 class="article-header">standart buttons</h2>
   <div class="standart-buttons__content">
-<button class="button_cyan-small-ripple">button</button>
-<button class="button_cyan-big-ripple">button</button>
-<button class="button_orange-big-ripple">button</button>
-<button class="button_orange-small-ripple">button</button>
-<button class="button_cyan-small-hover">button</button>
-<button class="button_cyan-big-hover">button</button>
-<button class="button_orange-big-hover">button</button>
-<button class="button_orange-small-hover">button</button>
-<button class="button_cyan-small">button</button>
-<button class="button_cyan-big">button</button>
-<button class="button_orange-big">button</button>
-<button class="button_orange-small">button</button>
+    <button class="button button_small button_cyan_hovered button_pressed">button</button>
+    <button class="button button_big button_cyan_hovered button_pressed">button</button>
+    <button class="button button_big button_orange_hovered button_pressed">button</button>
+    <button class="button button_small button_orange_hovered button_pressed">button</button>
+    <button class="button button_small button_cyan_hovered">button</button>
+    <button class="button button_big button_cyan_hovered">button</button>
+    <button class="button button_big button_orange_hovered">button</button>
+    <button class="button button_small button_orange_hovered">button</button>
+    <button class="button button_small button_cyan_disabled">button</button>
+    <button class="button button_big button_cyan_disabled">button</button>
+    <button class="button button_big button_orange_disabled">button</button>
+    <button class="button button_small button_orange_disabled">button</button>
   </div>
 </article>
 <article class="arrow-buttons">
-<h2 class="arrow-buttons__header">arrow buttons</h2>
+  <h2 class="article-header">arrow buttons</h2>
 <div class="arrow-buttons__content"><a class="left-button" href="#">
   <div class="left-button__arrow"></div></a><a class="right-button" href="#">
   <div class="right-button__arrow"></div></a><a class="left-button_disabled" href="#">
@@ -38,7 +38,7 @@
 </div>
 </article>
 <article class="percentage">
-<h2 class="percentage__header">percentages / pie chart</h2>
+  <h2 class="article-header">percentages / pie chart</h2>
 <div class="percentage__content">
 <div class="percent-one"></div>
 <div class="percent-two"></div>
@@ -48,22 +48,22 @@
 </div>
 </article>
 <article class="sliders">
-<h2 class="sliders__header">sliders</h2>
+  <h2 class="article-header">sliders</h2>
 <div class="sliders__content">
 <div class="orange-slider">
-  <input class="container" type="range">
+  <input class="orange-slider__slider" type="hidden" value="40">
 </div>
 <div class="cyan-slider">
-  <input type="range" id="html-input-range">
+  <input class="cyan-slider__slider" type="hidden" value="75">
 </div>
 </div>
 </article>
 <article class="stages">
-<h2 class="stages__header">stages</h2>
+  <h2 class="article-header">stages</h2>
 <div class="stages"></div>
 </article>
 <article class="form-elements">
-<h2 class="form-elements__header">form elements</h2>
+  <h2 class="article-header">form elements</h2>
 <div class="form-elements__content">
 <div class="text-forms">
 <div class="text-forms__input-wrapper">
@@ -146,25 +146,59 @@
 </div>
 </article>
 <article class="news">
-<h2 class="news__header">news & events</h2>
+  <h2 class="article-header">news & events</h2>
 <div class="news__content">
-<div class="news-block">
-  <div class="news__image"><img src="./assets/img/news.png" alt=""></div>
-  <div class="news__text">
-    <h3 class="news__text-header">It’s all going downhill</h3>
-    <p class="news__text-date">24 august 2013</p>
-    <p class="news__text-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum aliquet venenatis. Etiam a nisi nunc, a tincidunt eros.</p>
-  </div>
+<div class="news-tracker">
+  <ul>
+    <li class="news-block">
+      <div class="news__image"><img src="./assets/img/news.png" alt=""></div>
+      <div class="news__text">
+        <h3 class="news__text-header">It’s all going downhill</h3>
+        <p class="news__text-date">24 august 2013</p>
+        <p class="news__text-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum aliquet venenatis. Etiam a nisi nunc, a tincidunt eros.</p>
+      </div>
+    </li>
+    <li class="news-block odd">
+      <div class="news__image"><img src="./assets/img/news.png" alt=""></div>
+      <div class="news__text">
+        <h3 class="news__text-header">We will turn it back</h3>
+        <p class="news__text-date">28 august 2014</p>
+        <p class="news__text-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum aliquet venenatis. Etiam a nisi nunc, a tincidunt eros.</p>
+      </div>
+    </li>
+  </ul>
 </div>
-<div class="events-block">
-  <div class="events__image"><img src="./assets/img/events.png" alt=""></div>
-  <div class="events__text">
-    <h3 class="events__text-header"><span class="date">24 </span>Aug</h3>
-    <p class="events__text-title">this is the title</p>
-    <p class="events__text-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    <button class="events__text-button">add to calendar</button>
-  </div>
+<div class="events-tracker">
+  <ul>
+    <li class="events-block">
+      <div class="events__image"><img src="./assets/img/events.png" alt=""></div>
+      <div class="events__text">
+        <h3 class="events__text-header"><span class="date">24 </span>Aug</h3>
+        <p class="events__text-title">this is the title</p>
+        <p class="events__text-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <button class="events__text-button">add to calendar</button>
+      </div>
+    </li>
+    <li class="events-block">
+      <div class="events__image"><img src="./assets/img/events.png" alt=""></div>
+      <div class="events__text">
+        <h3 class="events__text-header"><span class="date">30 </span>May</h3>
+        <p class="events__text-title">another title</p>
+        <p class="events__text-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <button class="events__text-button">add to calendar</button>
+      </div>
+    </li>
+  </ul>
 </div>
+</div>
+</article>
+<article class="calendar-plugin">
+  <h2 class="article-header">calendar</h2>
+</article>
+<article class="video">
+  <h2 class="article-header">video</h2>
+<div class="video-wrapper">
+  <iframe class="video-window" src="https://player.vimeo.com/video/62980495" width="594" height="360" frameborder="0" allowfullscreen></iframe>
 </div>
 </article>
     </div>

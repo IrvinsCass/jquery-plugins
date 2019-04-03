@@ -6,6 +6,7 @@ import './blocks/sliders/sliders'
 import './blocks/stages/stages'
 import './blocks/form-elements/form-elements'
 import './blocks/news/news'
+import './blocks/calendar/calendar'
 
 $(document).ready(function() {
   $('.news-tracker').easyTicker({

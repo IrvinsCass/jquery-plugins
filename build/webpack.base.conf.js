@@ -33,8 +33,7 @@ module.exports = {
       use: [{
       loader: 'expose-loader',
       options: '$'
-        }
-      ]
+        }]
     },{
       test: /\.(png|jpg|gif)$/,
       loader: 'file-loader',
