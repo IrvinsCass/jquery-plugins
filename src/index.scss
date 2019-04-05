@@ -9,13 +9,15 @@ body {
   width: 100%;
   max-width: 1400px;
   @include flex(row);
+  justify-content: center;
   margin: 0 auto;
   font-family: $boldFont;
 }
 
 .content-wrapper {
   width: 100%;
-  @include flex(column);
+  max-width: 600px;
+  @include flex(row);
   justify-content: center;
   flex-wrap: wrap;
   margin: 50px;

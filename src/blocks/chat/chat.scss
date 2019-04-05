@@ -1,0 +1,11 @@
+
+.chat-plugin {
+  @include flex(column);
+  justify-content: center;
+  width: 100%;
+  max-width: 297px;
+} 
+
+.chat-plugin__content {
+  height: 300px;
+}

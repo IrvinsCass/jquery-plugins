@@ -1,0 +1,45 @@
+.location {
+  @include flex(column);
+  width: 100%;
+  max-width: 594px;
+}
+
+.google-map {
+  @include size(100%, 270px);
+  background-color: $warmColor;
+  border-radius: 3px;
+  margin: 20px 0;
+
+  &-window {
+    @include size(100%, 205px);
+    background-color: #fff;
+  }
+
+  &-description {
+    @include flex(row);
+    height: 65px;
+    color: #fff;
+
+    &__meet {
+      width: 25%;
+      font-family: $thinFont;
+      font-size: 28px;
+      text-align: center;
+    }
+
+    &__address {
+      width: 61%;
+      font-family: $boldFont;
+      font-size: 12px;
+    }
+
+    &__icons {
+      width: 12%;
+      font-size: 20px;
+
+      .fa-map-marker-alt {
+        width: 30px;
+      }
+    }
+  }
+}
