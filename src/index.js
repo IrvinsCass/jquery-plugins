@@ -7,6 +7,8 @@ import './blocks/stages/stages'
 import './blocks/form-elements/form-elements'
 import './blocks/news/news'
 import './blocks/calendar/calendar'
+import './blocks/chat/chat'
+import './blocks/location/location'
 
 $(document).ready(function() {
   $('.news-tracker').easyTicker({
@@ -38,5 +40,42 @@ $(document).ready(function() {
     showScale : false,
     theme : 'theme-orange',
     });
+
+  $(function () {
+    $('.calendar-window__body').calendar({
+      color: '#e75735',
+      days: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+    });
+  });
     
+  var convForm = $('.chat-window__content').convform({
+    placeHolder : 'Type Here',
+    typeInputUi : 'input', // 'input' or 'textarea'
+    timeOutFirstQuestion : 1200,
+    buttonClassStyle : 'icon2-arrow',
+    selectInputStyle: 'show', // or disable, hide
+    selectInputDisabledText: 'Select an option',
+    eventList : {
+      onSubmitForm : function(convState) {
+        console.log('completed');
+        convState.form.submit();
+        return true;
+      },
+      onInputSubmit : function(convState, readyCallback) {
+        if(convState.current.input.hasOwnProperty('callback')) {
+          if(typeof convState.current.input.callback === 'string') {
+            window[convState.current.input.callback](convState, readyCallback);
+          } else {
+            convState.current.input.callback(convState, readyCallback);
+          }
+        } else {
+          readyCallback();
+        }
+      }
+    },
+    formIdName : 'convForm',
+    inputIdName : 'userInput',
+    loadSpinnerVisible : '',
+    buttonText: 'REPLY'
+});
 })

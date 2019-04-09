@@ -4,16 +4,11 @@
   max-width: 594px;
 }
 
-.google-map {
+.map {
   @include size(100%, 270px);
   background-color: $warmColor;
   border-radius: 3px;
   margin: 20px 0;
-
-  &-window {
-    @include size(100%, 205px);
-    background-color: #fff;
-  }
 
   &-description {
     @include flex(row);
@@ -34,12 +29,14 @@
     }
 
     &__icons {
+      @include flex(row);
+      justify-content: space-around;
       width: 12%;
-      font-size: 20px;
-
-      .fa-map-marker-alt {
-        width: 30px;
-      }
     }
   }
+}
+
+#map {
+  @include size(594px, 205px);
+  background-color: #fff;
 }

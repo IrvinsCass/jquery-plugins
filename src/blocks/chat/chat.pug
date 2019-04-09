@@ -1,3 +1,48 @@
-article.chat-plugin
+article.chat
   h2.article-header messaging
-  .chat-plugin__content
+  .chat-window
+    .chat-window__header sarah brown
+      .sarah-profile__photoframe.chat-photoframe
+        img(src="/assets/img/sarah.png", alt="from sarah with love")
+    .chat-window__content
+      #demo
+        .vertical-align
+          .container
+            .row
+              .col-sm-6.col-sm-offset-3.col-xs-offset-0
+                .card.no-border
+                  #chat.conv-form-wrapper
+                    form.hidden(action='', method='GET')
+                      select(data-conv-question="Hey! So are we cool to meet at the art gallery? Say 8pm", name='first-question')
+                        option(value='yes') Yes
+                        option(value='sure') Sure!
+                      input(type='text', data-conv-question="Nice! And while you arriving, I'm tell you about this plugin", data-no-answer='true')
+                      input(type='text', name='name', data-conv-question='Alright! First, tell me your full name, please.|Okay! Please, tell me your name first.')
+                      input(type='text', data-conv-question="Howdy, {name}:0! It's a pleasure to meet you. (note that this question doesn't expect any answer)", data-no-answer='true')
+                      input(type='text', data-conv-question="This plugin supports multi-select too. Let's see an example.", data-no-answer='true')
+                      select(name='multi[]', data-conv-question='What kind of music do you like?', multiple='')
+                        option(value='Rock') Rock
+                        option(value='Pop') Pop
+                        option(value='Country') Country
+                        option(value='Classic') Classic
+                      select(name='programmer', data-callback='storeState', data-conv-question='So, are you a programmer? (this question will fork the conversation based on your answer)')
+                        option(value='yes') Yes
+                        option(value='no') No
+                      div(data-conv-fork='programmer')
+                        div(data-conv-case='yes')
+                          input(type='text', data-conv-question='A fellow programmer! Cool.', data-no-answer='true')
+                        div(data-conv-case='no')
+                          select(name='thought', data-conv-question='Have you ever thought about learning? Programming is fun!')
+                            option(value='yes') Yes
+                            option(value='no') No..
+                      input(type='text', data-conv-question='convForm also supports regex patterns. Look:', data-no-answer='true')
+                      input#email(data-conv-question='Type in your e-mail', data-pattern='^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$', type='email', name='email', required='', placeholder="What's your e-mail?")
+                      input#senha(data-conv-question='Now tell me a secret (like a password)', type='password', data-minlength='6', name='password', required='', placeholder='password')
+                      select(data-conv-question='Selects also support callback functions. For example, try one of these:')
+                        option(value='google', data-callback='google') Google
+                        option(value='bing', data-callback='bing') Bing
+                      select(name='callbackTest', data-conv-question="You can do some cool things with callback functions. Want to rollback to the 'programmer' question before?")
+                        option(value='yes', data-callback='rollback') Yes
+                        option(value='no', data-callback='restore') No
+                      select(data-conv-question='This is it! If you like me, consider donating! If you need support, contact me. When the form gets to the end, the plugin submits it normally, like you had filled it.', id='')
+                        option(value='') Awesome!

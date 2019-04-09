@@ -5,7 +5,11 @@
 * This software is licensed under the MIT license!
 * View LICENSE.md for more information
 */
+
 (function ($) {
+
+	var date = new Date()
+	$('.calendar-window__header').text(date.getDate());
 	
 	$.fn.calendar = function (opts) {
 		var options = $.extend({
@@ -38,8 +42,6 @@
 		buttonLeft.addClass('button').addClass('left');
 		buttonLeft.html(' &lang; ');
 		buttonLeft.bind('click', function () { currentCalendar = $(this).parents('.calendar'); selectMonth(false, options); });
-		buttonLeft.bind('mouseover', function () { $(this).css('background', createAccent(color, -20)); });
-		buttonLeft.bind('mouseout', function () { $(this).css('background', color); });
 		
 		var headerLabel = $('<span>').appendTo(header);
 		headerLabel.addClass('header-label')
@@ -56,8 +58,6 @@
 		buttonRight.addClass('button').addClass('right');
 		buttonRight.html(' &rang; ');
 		buttonRight.bind('click', function () { currentCalendar = $(this).parents('.calendar'); selectMonth(true, options); });
-		buttonRight.bind('mouseover', function () { $(this).css('background', createAccent(color, -20)); });
-		buttonRight.bind('mouseout', function () { $(this).css('background', color); });
 		
 		var dayNames = $('<table>').appendTo(wrapper);
 		dayNames.append('<thead><th>' + options.days.join('</th><th>') + '</th></thead>');

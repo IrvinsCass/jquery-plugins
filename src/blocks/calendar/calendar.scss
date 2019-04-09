@@ -5,6 +5,7 @@
 * This software is licensed under the MIT license!
 * View LICENSE.md for more information
 */
+
 .calendar-plugin {
   @include flex(column);
   justify-content: center;
@@ -12,15 +13,41 @@
   max-width: 297px;
 }
 
-.calendar-plugin__content {
-  height: 300px;
+.calendar-window {
+  @include size(279px, 430px);
+  margin: 20px 0;
+}
+
+.calendar-window__header {
+  @include size(100%, 109px);
+  @include flex(row);
+  justify-content: center;
+  background-color: $warmColor;
+  border-radius: 3px 3px 0 0;
+  font-size: 76px;
+  color: #fff;
+  font-family: $thinFont;
+}
+
+.calendar-window__footer {
+  @include size(100%, 49px);
+  @include flex(row);
+  background-color: #e5e5e5;
+  line-height: 1;
+  border-radius: 0 0 3px 3px;
+  text-transform: uppercase;
+  color: #868686;
+  font: 13px $boldFont;
+
+  span {
+    margin-left: 15px;
+  }
 }
 
 .calendar { 
-  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25); 
-  font: 13px/1.5 "Helvetica Neue", Helvatica, Arial, san-serif; 
+  font: 13px/1.5 $thinFont, Helvatica, Arial, san-serif; 
   display: table; 
-width: 100%;
+  width: 100%;
 }
 
 .calendar header { 
@@ -36,63 +63,66 @@ width: 100%;
 }
 
 .calendar header .button { 
-  width: 40px; 
+  background-color: #d54c2c;
+  width: 38px; 
+  height: 38px;
   text-align: center; 
   position: absolute; 
-cursor: pointer;
+  cursor: pointer;
 } 
 
 .calendar header .left.button { 
   left:0; 
+  top:-10px; 
 } 
 
 .calendar header .right.button { 
   right:0; 
-  top:0; 
+  top:-10px; 
 } 
 
 .calendar header .header-label { 
+  background-color: #d54c2c;
   letter-spacing: 1px; 
   width: 100%; 
   text-align: center; 
-cursor: pointer;
+  cursor: pointer;
 }
 
 .calendar table { 
-  background:#fff; 
+  background:#f2f2f2; 
   border-collapse: collapse; 
 } 
 .calendar table td { 
-  color:#2b2b2b; 
-  width:30px; 
-  height:30px; 
+  color:#868686; 
+  width:14.25%; 
+  height:40px; 
   line-height:30px; 
   text-align:center; 
-  border:1px solid #e6e6e6; 
+  border:1px solid #fff; 
   cursor:default; 
 } 
 .calendar thead th { 
-  height:26px; 
+  background-color: $warmColor;
+  width: 14.25%;
+  height:40px; 
   line-height: 26px; 
   text-transform:uppercase; 
-  font-size:90%; 
-  color:#9e9e9e; 
+  font-size:80%; 
+  color:#fff; 
 } 
-.calendar thead th:not(:last-child) { 
-  border-right:1px solid #fff; 
-}
 
 .calendar .calendar-frame table { 
   width: 100%;
 } 
 
 .calendar .calendar-frame tbody td.today { 
-  background:#eee; 
-  color:#555;  
+  background :$warmColor; 
+  color:#fff;  
 } 
 
 .calendar .calendar-frame tbody td:not(.disabled).selected { 
-  background:#eee; 
+  background:#e5e5e5; 
   color:#555;  
 } 
 

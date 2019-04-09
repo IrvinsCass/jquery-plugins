@@ -192,8 +192,93 @@
 </div>
 </div>
 </article>
+<article class="location">
+  <h2 class="article-header">location</h2>
+  <div class="map">
+    <div id="map"></div>
+    <div class="map-description">
+      <div class="map-description__meet">Meet us!</div>
+      <div class="map-description__address">1259  CALIFORNIA ST <br>San Francisco, CA</div>
+      <div class="map-description__icons"><img src="assets/img/location/my-location.png" alt=""><img src="assets/img/location/pin.png" alt=""></div>
+    </div>
+  </div>
+</article>
 <article class="calendar-plugin">
   <h2 class="article-header">calendar</h2>
+  <div class="calendar-window">
+    <div class="calendar-window__header"></div>
+    <div class="calendar-window__body"></div>
+    <div class="calendar-window__footer"> <span>today</span></div>
+  </div>
+</article>
+<article class="chat">
+  <h2 class="article-header">messaging</h2>
+  <div class="chat-window">
+    <div class="chat-window__header">sarah brown
+      <div class="sarah-profile__photoframe chat-photoframe"><img src="./assets/img/sarah.png" alt="from sarah with love"></div>
+    </div>
+    <div class="chat-window__content">
+      <div id="demo">
+        <div class="vertical-align">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3 col-xs-offset-0">
+                <div class="card no-border">
+                  <div class="conv-form-wrapper" id="chat">
+                    <form class="hidden" action="" method="GET">
+                      <select data-conv-question="Hey! So are we cool to meet at the art gallery? Say 8pm" name="first-question">
+                        <option value="yes">Yes</option>
+                        <option value="sure">Sure!</option>
+                      </select>
+                      <input type="text" data-conv-question="Nice! And while you arriving, I'm tell you about this plugin" data-no-answer="true">
+                      <input type="text" name="name" data-conv-question="Alright! First, tell me your full name, please.|Okay! Please, tell me your name first.">
+                      <input type="text" data-conv-question="Howdy, {name}:0! It's a pleasure to meet you. (note that this question doesn't expect any answer)" data-no-answer="true">
+                      <input type="text" data-conv-question="This plugin supports multi-select too. Let's see an example." data-no-answer="true">
+                      <select name="multi[]" data-conv-question="What kind of music do you like?" multiple="">
+                        <option value="Rock">Rock</option>
+                        <option value="Pop">Pop</option>
+                        <option value="Country">Country</option>
+                        <option value="Classic">Classic</option>
+                      </select>
+                      <select name="programmer" data-callback="storeState" data-conv-question="So, are you a programmer? (this question will fork the conversation based on your answer)">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                      </select>
+                      <div data-conv-fork="programmer">
+                        <div data-conv-case="yes">
+                          <input type="text" data-conv-question="A fellow programmer! Cool." data-no-answer="true">
+                        </div>
+                        <div data-conv-case="no">
+                          <select name="thought" data-conv-question="Have you ever thought about learning? Programming is fun!">
+                            <option value="yes">Yes</option>
+                            <option value="no">No..</option>
+                          </select>
+                        </div>
+                      </div>
+                      <input type="text" data-conv-question="convForm also supports regex patterns. Look:" data-no-answer="true">
+                      <input id="email" data-conv-question="Type in your e-mail" data-pattern="^[a-zA-Z0-9.!#$%&amp;’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$" type="email" name="email" required="" placeholder="What's your e-mail?">
+                      <input id="senha" data-conv-question="Now tell me a secret (like a password)" type="password" data-minlength="6" name="password" required="" placeholder="password">
+                      <select data-conv-question="Selects also support callback functions. For example, try one of these:">
+                        <option value="google" data-callback="google">Google</option>
+                        <option value="bing" data-callback="bing">Bing</option>
+                      </select>
+                      <select name="callbackTest" data-conv-question="You can do some cool things with callback functions. Want to rollback to the 'programmer' question before?">
+                        <option value="yes" data-callback="rollback">Yes</option>
+                        <option value="no" data-callback="restore">No</option>
+                      </select>
+                      <select data-conv-question="This is it! If you like me, consider donating! If you need support, contact me. When the form gets to the end, the plugin submits it normally, like you had filled it." id="">
+                        <option value="">Awesome!</option>
+                      </select>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </article>
 <article class="video">
   <h2 class="article-header">video</h2>
@@ -201,6 +286,7 @@
   <iframe class="video-window" src="https://player.vimeo.com/video/62980495" width="594" height="360" frameborder="0" allowfullscreen></iframe>
 </div>
 </article>
+      <script src="https://api-maps.yandex.ru/2.1/?apikey=907cc0b2-bd24-4b03-a5b3-befeed8445d7&amp;lang=ru_RU"></script>
     </div>
   <script type="text/javascript" src="./static/js/index.js"></script></body>
 </html>
